@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+/*FEEDBACK PAGE ITEMS*/
+
+.icon-box {
+  @apply items-center justify-center w-12 h-12 
+   rounded-full bg-(--dark-blue) flex overflow-hidden
+   absolute top-10 left-10;
+}
+
+.content {
+  @apply flex flex-col justify-center w-full h-full mt-15 p-7;
+}
+
+.card {
+  @apply w-105 h-105 bg-(--dark-blue) relative flex flex-col items-center 
+  justify-center rounded-4xl;
+  background: radial-gradient(
+    circle at top,
+    hsla(215, 19.5%, 17.1%, 0.8) 0%,
+    hsl(215, 27%, 12%) 100%,
+    transparent 100%
+  );
+}
+
+.rating-box {
+  @apply items-center gap-8 justify-center flex text-lg;
+}
+
+.submit-button {
+  @apply w-full h-10 text-xl bg-(--orange) mt-6 rounded-full cursor-pointer;
+}
+
+.submit-button:hover {
+  @apply bg-white text-black;
+}
+
+.rating-button {
+  @apply text-(--light-grey) w-11 h-11 rounded-full
+   bg-(--dark-blue) flex items-center justify-center
+   overflow-hidden cursor-pointer;
+}
+
+.rating-button:hover {
+  @apply bg-white transition-colors duration-150 text-black;
+}
+
+.rating-button.selected {
+  @apply bg-(--orange) text-black;
+}
+
+.review-question {
+  @apply text-white opacity-85 ml-3 text-4xl font-bold;
+}
+
+.suggestion {
+  @apply m-5 text-(--light-grey);
+}
+
+.icon-box img {
+  @apply w-5 h-5 object-contain;
+}
+
+/*THANK YOU PAGE ITEMS*/
+
+.ty-card {
+  @apply w-105 h-105 bg-(--dark-blue) flex flex-col items-center 
+  justify-center rounded-4xl top-0;
+  background: radial-gradient(
+    circle at top,
+    hsla(215, 19.5%, 17.1%, 0.8) 0%,
+    hsl(215, 27%, 12%) 100%,
+    transparent 100%
+  );
+}
+
+.icon-box2 {
+  @apply absolute top-0 mt-10;
+}
+
+.icon-box2 img {
+  @apply w-45;
+}
+
+/*UNIVERSAL ITEMS*/
+
+.background {
+  @apply bg-(--very-dark-blue) h-full w-full overflow-hidden 
+  absolute justify-center items-center flex;
+}
+
+.p {
+  font-size: 15px;
+}
+
+/*TAILWIND CUSTOM THEMES*/
+
+@theme {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
