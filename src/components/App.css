@@ -67,7 +67,7 @@
 
 .ty-card {
   @apply w-105 h-105 bg-(--dark-blue) flex flex-col items-center 
-  justify-center rounded-4xl top-0;
+  justify-center rounded-4xl top-0 relative;
   background: radial-gradient(
     circle at top,
     hsla(215, 19.5%, 17.1%, 0.8) 0%,
@@ -77,11 +77,25 @@
 }
 
 .icon-box2 {
-  @apply absolute top-0 mt-10;
+  @apply absolute top-0 mt-12 flex;
 }
 
 .icon-box2 img {
   @apply w-45;
+}
+
+.selected-value {
+  @apply w-60 h-10 text-center justify-center flex
+   items-center rounded-full bg-(--dark-blue)
+   text-(--orange) opacity-90;
+}
+
+.thank-you {
+  @apply text-2xl text-white font-bold opacity-90 flex mt-30 absolute;
+}
+
+.appreciation {
+  @apply text-(--light-grey) absolute mt-60 p-7 text-center;
 }
 
 /*UNIVERSAL ITEMS*/
