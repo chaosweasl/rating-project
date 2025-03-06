@@ -1,3 +1,3 @@
-Ahoy! This is a template I made to automate starting a new front-end project!
+Vite React with TS and Tailwind project
 
-This template uses Vite React with TS and Tailwind.
+view at https://chaosweasl.github.io/rating-project/
